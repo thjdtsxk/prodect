@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Status | FashionFusion</title>
+  <meta name="description" content="FashionFusion অর্ডার ট্র্যাকিং ও স্ট্যাটাস">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="status.css" />
+  <script src="status.js" defer></script>
+</head>
+<body>
+
+  <!-- 🧭 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>📦 আপনার অর্ডার স্ট্যাটাস</h1>
+      <nav>
+        <a href="index.html">হোম</a>
+        <a href="login.html">লগইন</a>
+        <a href="gallery.html">পণ্য</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🔍 Tracking Section -->
+  <main class="container">
+    <section class="track-block">
+      <h2>🔍 ট্র্যাক অর্ডার</h2>
+      <input type="text" id="orderIdInput" placeholder="অর্ডার ID লিখুন..." />
+      <button onclick="trackOrder()">ট্র্যাক করুন</button>
+    </section>
+
+    <!-- 📊 Status Display -->
+    <section class="status-display" id="statusSection">
+      <!-- JS will populate -->
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | বিশ্বস্ত অর্ডার ট্র্যাকিং 🇧🇩</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vendor Panel | FashionFusion</title>
+  <meta name="description" content="Vendor Dashboard for product & order management">
+  <link rel="stylesheet" href="vendor.css" />
+  <script src="vendor.js" defer></script>
+</head>
+<body>
+
+  <!-- 🧭 Sidebar -->
+  <aside class="vendor-sidebar">
+    <h2>🛍️ বিক্রেতা প্যানেল</h2>
+    <nav>
+      <a href="#overview">📊 ড্যাশবোর্ড</a>
+      <a href="#myProducts">🧺 আমার পণ্য</a>
+      <a href="#orders">📦 অর্ডারসমূহ</a>
+      <a href="#earnings">💰 আয়</a>
+      <a href="#profile">👤 প্রোফাইল</a>
+      <a href="logout.html">🚪 লগআউট</a>
+    </nav>
+  </aside>
+
+  <!-- 🧩 Dashboard Content -->
+  <main class="vendor-content">
+
+    <!-- 📊 Overview -->
+    <section id="overview">
+      <h2>📈 বিক্রয়ের সারাংশ</h2>
+      <div class="overview-cards">
+        <div class="card">
+          <h3>মোট পণ্য</h3>
+          <p>32</p>
+        </div>
+        <div class="card">
+          <h3>মোট অর্ডার</h3>
+          <p>78</p>
+        </div>
+        <div class="card">
+          <h3>মোট আয়</h3>
+          <p>৳24,760</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🧺 My Products -->
+    <section id="myProducts">
+      <h2>আমার পণ্যসমূহ</h2>
+      <button onclick="openProductForm()">➕ নতুন পণ্য যোগ করুন</button>
+      <div id="productList">
+        <!-- JS থেকে পণ্য আসবে -->
+      </div>
+    </section>
+
+    <!-- 📦 Orders -->
+    <section id="orders">
+      <h2>অর্ডার তালিকা</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>অর্ডার ID</th>
+            <th>পণ্য</th>
+            <th>পরিমাণ</th>
+            <th>স্ট্যাটাস</th>
+            <th>একশন</th>
+          </tr>
+        </thead>
+        <tbody id="vendorOrderList">
+          <!-- JS থেকে ডাটা আসবে -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 💰 Earnings -->
+    <section id="earnings">
+      <h2>আয়ের বিবরণ</h2>
+      <ul>
+        <li>মাসিক আয়: ৳8,240</li>
+        <li>বকেয়া: ৳1,200</li>
+        <li>শেষ পেমেন্ট: ২০২৫-০৭-১৮</li>
+      </ul>
+      <button onclick="requestWithdrawal()">💳 উইথড্র রিকোয়েস্ট</button>
+    </section>
+
+    <!-- 👤 Vendor Profile -->
+    <section id="profile">
+      <h2>আমার প্রোফাইল</h2>
+      <p><strong>নাম:</strong> ইসলাম ফ্যাশন</p>
+      <p><strong>ইমেইল:</strong> islamfashion@example.com</p>
+      <p><strong>স্টোর লোকেশন:</strong> খুলনা সদর</p>
+      <button onclick="editVendorProfile()">✏️ প্রোফাইল এডিট</button>
+    </section>
+  </main>
+</body>
+</html>

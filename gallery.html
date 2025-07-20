@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery Upload | FashionFusion</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>🖼️ FashionFusion গ্যালারী</h1>
+      <nav>
+        <a href="index.html">হোম</a>
+        <a href="dashboard.html">ড্যাশবোর্ড</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container gallery-upload">
+    <section>
+      <h2>📤 নতুন ছবি আপলোড করুন</h2>
+      <form id="galleryForm">
+        <input type="file" accept="image/*" id="imageInput" required />
+        <button type="submit">✅ আপলোড</button>
+      </form>
+      <div id="previewArea"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | Gallery Upload Panel 🇧🇩</p>
+    </div>
+  </footer>
+</body>
+</html>

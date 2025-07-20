@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Configuration | FashionFusion</title>
+  <meta name="description" content="অ্যাডমিন সেটিংস এবং কনফিগারেশন সেন্টার">
+  <link rel="stylesheet" href="admin-config.css" />
+  <script src="admin-api.js" defer></script>
+</head>
+<body>
+
+  <!-- 🧭 Sidebar -->
+  <aside class="admin-sidebar">
+    <h2>⚙️ অ্যাডমিন কনফিগারেশন</h2>
+    <nav>
+      <a href="#siteSettings">🌐 সাইট সেটিংস</a>
+      <a href="#accessControl">🔒 এক্সেস নিয়ন্ত্রণ</a>
+      <a href="#preferences">🌙 থিম/প্রেফারেন্স</a>
+    </nav>
+  </aside>
+
+  <!-- 🧩 Content Area -->
+  <main class="admin-config-content">
+
+    <!-- 🌐 Site Settings -->
+    <section id="siteSettings">
+      <h2>🌐 সাইট সেটিংস</h2>
+      <label>সাইট নাম:</label>
+      <input type="text" value="FashionFusion" />
+      <label>Tagline:</label>
+      <input type="text" value="দেশি পণ্য, বিশ্বমান" />
+      <button>✅ সংরক্ষণ করুন</button>
+    </section>
+
+    <!-- 🔒 Access Control -->
+    <section id="accessControl">
+      <h2>🔒 এক্সেস নিয়ন্ত্রণ</h2>
+      <label>অ্যাডমিন ইমেইল:</label>
+      <input type="email" value="admin@fashionfusion.com" />
+      <label>API Access Token:</label>
+      <input type="password" value="************" />
+      <button>🔐 Reset Token</button>
+    </section>
+
+    <!-- 🌙 Preferences -->
+    <section id="preferences">
+      <h2>🌙 থিম এবং ড্যাশবোর্ড প্রেফারেন্স</h2>
+      <label><input type="checkbox" /> Dark Mode চালু করুন</label>
+      <label><input type="checkbox" checked /> Real-time Notifications</label>
+      <button>📦 Update Preferences</button>
+    </section>
+
+  </main>
+</body>
+</html>

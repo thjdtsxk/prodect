@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Analytics Dashboard | FashionFusion</title>
+  <meta name="description" content="অ্যাডমিন অ্যানালিটিক্স এবং রিপোর্টিং">
+  <link rel="stylesheet" href="admin-analytics.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="admin-analytics.js" defer></script>
+</head>
+<body>
+
+  <!-- 🧭 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>📊 ফ্যাশনফিউশন রিপোর্ট</h1>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="admin-config.html">Settings</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 📈 Analytics Section -->
+  <main class="container">
+    <section class="summary-kpi">
+      <div class="kpi-box">📦 Orders Today: <span id="ordersToday">128</span></div>
+      <div class="kpi-box">👥 New Users: <span id="newUsers">42</span></div>
+      <div class="kpi-box">💰 Revenue: ৳<span id="revenueToday">34,000</span></div>
+    </section>
+
+    <section class="chart-area">
+      <h2>📈 মাসিক অর্ডার গ্রাফ</h2>
+      <canvas id="ordersChart"></canvas>
+    </section>
+
+    <section class="action-block">
+      <button onclick="refreshAnalytics()">🔄 রিফ্রেশ</button>
+      <button onclick="exportReport()">📥 এক্সপোর্ট রিপোর্ট</button>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | Analytics & Insights 🇧🇩</p>
+    </div>
+  </footer>
+</body>
+</html>

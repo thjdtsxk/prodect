@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Users | FashionFusion</title>
+  <meta name="description" content="ইউজার ম্যানেজমেন্ট পেইজ">
+  <link rel="stylesheet" href="admin-users.css" />
+  <script src="admin-users.js" defer></script>
+</head>
+<body>
+
+  <!-- 🧭 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>👥 ইউজার তালিকা</h1>
+      <nav>
+        <a href="admin-config.html">Settings</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 📋 User Table -->
+  <main class="container">
+    <section>
+      <h2>🧾 নিবন্ধিত ইউজারসমূহ</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>নাম</th>
+            <th>ইমেইল</th>
+            <th>রোল</th>
+            <th>অ্যাকশন</th>
+          </tr>
+        </thead>
+        <tbody id="userTable">
+          <!-- JS will populate -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | অ্যাডমিন ইউজার কন্ট্রোল 🇧🇩</p>
+    </div>
+  </footer>
+</body>
+</html>

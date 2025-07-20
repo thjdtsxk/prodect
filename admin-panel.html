@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel | FashionFusion</title>
+  <meta name="description" content="FashionFusion এর অ্যাডমিন কন্ট্রোল প্যানেল">
+  <link rel="stylesheet" href="admin.css" />
+  <script src="admin.js" defer></script>
+</head>
+<body>
+
+  <!-- 📚 Sidebar -->
+  <aside class="sidebar">
+    <h2>⚙️ Admin Dashboard</h2>
+    <nav>
+      <a href="#stats">📊 ড্যাশবোর্ড</a>
+      <a href="#orders">📦 অর্ডার</a>
+      <a href="#users">👥 ইউজার</a>
+      <a href="#products">🛍️ পণ্য</a>
+      <a href="#reports">📄 রিপোর্ট</a>
+      <a href="#settings">⚙️ সেটিংস</a>
+      <a href="logout.html">🔓 লগআউট</a>
+    </nav>
+  </aside>
+
+  <!-- 🧩 Main Content -->
+  <main class="admin-content">
+
+    <!-- 📊 Stats Overview -->
+    <section id="stats" class="stats-section">
+      <h2>📈 আজকের অবস্থা</h2>
+      <div class="stats-grid">
+        <div class="card">
+          <h3>🛒 মোট অর্ডার</h3>
+          <p>125</p>
+        </div>
+        <div class="card">
+          <h3>👥 মোট ইউজার</h3>
+          <p>410</p>
+        </div>
+        <div class="card">
+          <h3>🛍️ মোট পণ্য</h3>
+          <p>88</p>
+        </div>
+        <div class="card">
+          <h3>📄 রিপোর্ট</h3>
+          <p>3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📦 Orders Management -->
+    <section id="orders">
+      <h2>অর্ডার ম্যানেজমেন্ট</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>User</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="orderList">
+          <!-- JS will populate -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 👥 User Management -->
+    <section id="users">
+      <h2>ইউজার তালিকা</h2>
+      <div id="userList">
+        <!-- JS will populate -->
+      </div>
+    </section>
+
+    <!-- 🛍️ Product Management -->
+    <section id="products">
+      <h2>পণ্য ম্যানেজ</h2>
+      <button onclick="addProduct()">➕ নতুন পণ্য যোগ করুন</button>
+      <div id="productGrid">
+        <!-- JS will populate -->
+      </div>
+    </section>
+
+    <!-- 📄 Reports -->
+    <section id="reports">
+      <h2>রিপোর্ট</h2>
+      <ul id="reportList">
+        <!-- JS will populate -->
+      </ul>
+    </section>
+
+    <!-- ⚙️ Settings -->
+    <section id="settings">
+      <h2>সেটিংস</h2>
+      <label>
+        <input type="checkbox" id="darkModeToggle" />
+        🌙 Dark Mode চালু করুন
+      </label>
+    </section>
+  </main>
+</body>
+</html>

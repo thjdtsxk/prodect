@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout | FashionFusion</title>
+  <meta name="description" content="পেমেন্ট ও অর্ডার কনফার্মেশন পেইজ">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="checkout.css" />
+  <script src="checkout.js" defer></script>
+</head>
+<body>
+
+  <!-- 🔰 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>💳 Checkout</h1>
+      <nav>
+        <a href="cart.html">কার্ট</a>
+        <a href="gallery.html">পণ্য</a>
+        <a href="login.html">লগইন</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🧾 Checkout Container -->
+  <main class="container checkout-section">
+
+    <!-- 🧍 Delivery Info -->
+    <section class="form-block">
+      <h2>🚚 ডেলিভারি তথ্য</h2>
+      <form id="deliveryForm">
+        <label for="name">নাম:</label>
+        <input type="text" id="name" required />
+        
+        <label for="phone">ফোন:</label>
+        <input type="tel" id="phone" required />
+
+        <label for="address">ঠিকানা:</label>
+        <textarea id="address" required></textarea>
+
+        <label for="area">এলাকা:</label>
+        <select id="area" required>
+          <option value="">-- সিলেক্ট করুন --</option>
+          <option value="Dhaka">Dhaka</option>
+          <option value="Chattogram">Chattogram</option>
+          <option value="Khulna">Khulna</option>
+          <option value="Other">Other</option>
+        </select>
+      </form>
+    </section>
+
+    <!-- 💳 Payment Method -->
+    <section class="form-block">
+      <h2>💰 পেমেন্ট</h2>
+      <form id="paymentForm">
+        <label><input type="radio" name="payMethod" value="COD" checked /> ক্যাশ অন ডেলিভারি</label>
+        <label><input type="radio" name="payMethod" value="Card" /> কার্ড (ডেমো)</label>
+        <label><input type="radio" name="payMethod" value="Mobile" /> মোবাইল পেমেন্ট</label>
+      </form>
+    </section>
+
+    <!-- 🧾 Order Summary -->
+    <section class="order-summary">
+      <h2>📦 অর্ডার সামারি</h2>
+      <div id="summaryItems">
+        <!-- JS render -->
+      </div>
+      <p>Subtotal: ৳<span id="subtotal">0</span></p>
+      <p>Delivery Charge: ৳<span id="deliveryFee">0</span></p>
+      <p><strong>মোট: ৳<span id="grandTotal">0</span></strong></p>
+      <button onclick="confirmOrder()">✅ অর্ডার নিশ্চিত করুন</button>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | দেশি Checkout 🚀🇧🇩</p>
+    </div>
+  </footer>
+</body>
+</html>

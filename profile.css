@@ -1,0 +1,140 @@
+body {
+  font-family: 'SolaimanLipi', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 👤 Profile Section */
+.profile-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-photo {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-header h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.profile-header button {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.profile-info {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.profile-info p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* ❤️ Wishlist Section */
+.wishlist-section h3,
+.order-history h3,
+.account-security h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#wishlistItems {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#wishlistItems li {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* 📦 Order Table */
+.order-history table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.order-history th,
+.order-history td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.order-history th {
+  background-color: #e3f2fd;
+}
+
+.order-history td button {
+  background-color: #1976d2;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 🔒 Security Buttons */
+.account-security button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.account-security button:hover {
+  background-color: #d32f2f;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .profile-section {
+    padding: 20px;
+  }
+
+  .profile-header h2 {
+    font-size: 20px;
+  }
+
+  .profile-photo {
+    width: 80px;
+  }
+}

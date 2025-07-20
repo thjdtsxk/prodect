@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invoice | FashionFusion</title>
+  <meta name="description" content="FashionFusion অর্ডার ইনভয়েস পেইজ">
+  <link rel="stylesheet" href="invoice.css" />
+  <script src="invoice.js" defer></script>
+</head>
+<body>
+
+  <!-- 🧾 Invoice Section -->
+  <main class="invoice-container">
+    <section class="invoice-header">
+      <h1>🧾 FashionFusion Invoice</h1>
+      <p>অর্ডার ID: #FF20250723</p>
+      <p>তারিখ: ২০২৫-০৭-২৩</p>
+    </section>
+
+    <!-- 👤 Customer Info -->
+    <section class="invoice-block">
+      <h2>👤 ক্রেতার তথ্য</h2>
+      <p>নাম: রাফায়েত হোসেন</p>
+      <p>ফোন: 017XXXXXXXX</p>
+      <p>ঠিকানা: ২৯/বি, খুলনা সদর</p>
+    </section>
+
+    <!-- 📦 Order Items -->
+    <section class="invoice-block">
+      <h2>📦 অর্ডার বিবরণ</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>পণ্য</th>
+            <th>পরিমাণ</th>
+            <th>দাম</th>
+            <th>মোট</th>
+          </tr>
+        </thead>
+        <tbody id="orderItems">
+          <!-- JS লোড করবে -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 💳 Payment Info -->
+    <section class="invoice-block">
+      <h2>💳 পেমেন্ট ও ডেলিভারি</h2>
+      <p>পেমেন্ট পদ্ধতি: ক্যাশ অন ডেলিভারি</p>
+      <p>ডেলিভারি চার্জ: ৳<span id="deliveryFee">60</span></p>
+    </section>
+
+    <!-- 📊 Total Summary -->
+    <section class="invoice-total">
+      <p>Subtotal: ৳<span id="subtotal">0</span></p>
+      <h3>মোট: ৳<span id="grandTotal">0</span></h3>
+    </section>
+
+    <!-- 🖨️ Print -->
+    <section class="invoice-print">
+      <button onclick="window.print()">🖨️ Print / Download PDF</button>
+    </section>
+  </main>
+</body>
+</html>

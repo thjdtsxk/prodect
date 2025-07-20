@@ -1,0 +1,245 @@
+/* ✅ Base Layout */
+body {
+  font-family: 'SolaimanLipi', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 📦 Product Detail Section */
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+
+/* 🖼️ Product Image Gallery */
+.product-image {
+  flex: 1;
+  max-width: 450px;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.thumbnail-list {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnail-list img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.thumbnail-list img:hover {
+  border-color: #1976d2;
+}
+
+/* ℹ️ Product Info Panel */
+.product-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.rating {
+  color: #ffa000;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+#productDesc {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+select,
+input[type="number"] {
+  padding: 8px;
+  margin-top: 5px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+/* 🛒 Action Buttons */
+.product-actions {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.product-actions button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.product-actions button:hover {
+  background-color: #1565c0;
+}
+
+/* 🚚 Delivery Info */
+.delivery-info {
+  margin-top: 15px;
+  font-size: 14px;
+  background-color: #e3f2fd;
+  padding: 12px;
+  border-radius: 6px;
+  line-height: 1.6;
+}
+
+/* 💬 Review Section */
+.review-section {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.review-section h3 {
+  margin-bottom: 20px;
+}
+
+.review-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.review-item strong {
+  color: #1976d2;
+}
+
+.review-item p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* 🔁 Related Products */
+.related-products {
+  margin-top: 40px;
+}
+
+.related-products h3 {
+  margin-bottom: 15px;
+}
+
+.related-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.related-item {
+  background-color: #ffffff;
+  width: 180px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.related-item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+/* ❓ FAQ Section */
+.faq-section {
+  margin: 50px 0;
+}
+
+.faq-section details {
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+/* 🦶 Footer */
+.site-footer {
+  background-color: #eeeeee;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.site-footer nav a {
+  margin: 0 8px;
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+  }
+
+  .product-image,
+  .product-info {
+    max-width: 100%;
+  }
+
+  .related-grid {
+    justify-content: center;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+}

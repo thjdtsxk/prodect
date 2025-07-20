@@ -1,0 +1,102 @@
+body {
+  font-family: 'SolaimanLipi', sans-serif;
+  margin: 0;
+  background-color: #f2f5f8;
+  color: #333;
+}
+
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #263238;
+  color: #fff;
+  padding: 20px;
+}
+
+.admin-sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.admin-sidebar nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.admin-sidebar nav a:hover {
+  text-decoration: underline;
+}
+
+.admin-config-content {
+  margin-left: 240px;
+  padding: 30px;
+}
+
+.admin-config-content section {
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.admin-config-content h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #1976d2;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .admin-config-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

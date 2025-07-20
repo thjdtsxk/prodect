@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search Dashboard | FashionFusion</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="dashboard.js" defer></script>
+  <script src="dashboard-search.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>🔍 Dashboard Search</h1>
+      <nav>
+        <a href="dashboard.html">Home</a>
+        <a href="admin-analytics.html">Analytics</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container dashboard-main">
+    <!-- 🧠 Search Input -->
+    <section>
+      <input
+        type="text"
+        id="dashboardSearch"
+        placeholder="KPI খুঁজুন যেমন: অর্ডার, ইউজার, রেভিনিউ..."
+        style="width:100%; padding:12px; font-size:16px; border-radius:6px; border:1px solid #ccc;"
+      />
+    </section>
+
+    <!-- 📦 KPI Summary -->
+    <section class="dashboard-kpi" style="margin-top:20px;">
+      <div class="kpi-box">📦 Active Orders: <span>168</span></div>
+      <div class="kpi-box">👤 Total Users: <span>1,250</span></div>
+      <div class="kpi-box">💳 Today’s Revenue: ৳48,500</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | Dashboard Search Panel 🇧🇩</p>
+    </div>
+  </footer>
+</body>
+</html>

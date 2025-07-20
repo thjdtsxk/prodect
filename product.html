@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="FashionFusion - পণ্যের বিস্তারিত">
+  <title>FashionFusion | পণ্যের বিস্তারিত</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="product.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <!-- 🔰 হেডার -->
+  <header class="site-header">
+    <div class="container">
+      <div class="branding">
+        <a href="index.html"><h1>👕 FashionFusion</h1></a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">হোম</a></li>
+          <li><a href="gallery.html">পণ্যসমূহ</a></li>
+          <li><a href="cart.html">কার্ট 🛒</a></li>
+          <li><a href="login.html">লগইন 🔐</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 📦 পণ্যের বিস্তারিত -->
+  <main class="container">
+    <section id="productDetail" class="product-detail">
+      <div class="product-image">
+        <img src="images/shirt1.jpg" alt="পণ্যের ছবি" id="mainImage" />
+        <div class="thumbnail-list">
+          <img src="images/shirt1.jpg" onclick="changeImage(this.src)" alt="ছবি ১" />
+          <img src="images/shirt1-side.jpg" onclick="changeImage(this.src)" alt="ছবি ২" />
+          <img src="images/shirt1-back.jpg" onclick="changeImage(this.src)" alt="ছবি ৩" />
+        </div>
+      </div>
+      <div class="product-info">
+        <h2 id="productTitle">সাদা কটন শার্ট</h2>
+        <p class="price">৳550 <span class="old-price">৳620</span></p>
+        <p class="rating">⭐ 4.3/5 (22 রিভিউ)</p>
+        <p id="productDesc">নরম কটনের কাপড় দিয়ে তৈরি, অফিস ও পার্টির জন্য আদর্শ।</p>
+
+        <label for="sizeSelect">সাইজ:</label>
+        <select id="sizeSelect">
+          <option value="S">S</option>
+          <option value="M" selected>M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+
+        <label for="qtyInput">পরিমাণ:</label>
+        <input type="number" id="qtyInput" min="1" value="1" />
+
+        <div class="product-actions">
+          <button onclick="addToCart()">🛒 কার্টে যোগ করুন</button>
+          <button onclick="addToWishlist()">🤍 Wishlist</button>
+        </div>
+
+        <div class="delivery-info">
+          <p>🚚 ডেলিভারি: ১-৩ কর্মদিবস</p>
+          <p>💳 পেমেন্ট: বিকাশ, নগদ, কার্ড, কাশ অন ডেলিভারি</p>
+        </div>
+      </div>
+    </section>

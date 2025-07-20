@@ -1,0 +1,77 @@
+body {
+  font-family: 'SolaimanLipi', sans-serif;
+  background-color: #f7f8fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.signup-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.signup-section h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-section label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.signup-section input[type="text"],
+.signup-section input[type="email"],
+.signup-section input[type="tel"],
+.signup-section input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.checkbox-row {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.checkbox-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button[type="submit"] {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #1565c0;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="নতুন একাউন্ট তৈরি করুন | FashionFusion">
+  <title>FashionFusion | সাইন আপ</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+
+  <!-- 🔰 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>📝 একাউন্ট রেজিস্ট্রেশন</h1>
+      <nav>
+        <a href="index.html">হোম</a>
+        <a href="login.html">লগইন</a>
+        <a href="gallery.html">গ্যালারি</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🧾 Signup Form -->
+  <main class="container">
+    <section class="signup-section">
+      <h2>নতুন একাউন্ট তৈরি করুন</h2>
+
+      <form id="signupForm">
+        <label for="fullName">পূর্ণ নাম:</label>
+        <input type="text" id="fullName" required />
+
+        <label for="email">ইমেইল:</label>
+        <input type="email" id="email" required />
+
+        <label for="phone">ফোন নম্বর:</label>
+        <input type="tel" id="phone" required />
+
+        <label for="password">পাসওয়ার্ড:</label>
+        <input type="password" id="password" required />
+
+        <label for="confirmPass">পাসওয়ার্ড নিশ্চিত করুন:</label>
+        <input type="password" id="confirmPass" required />
+
+        <div class="checkbox-row">
+          <label>
+            <input type="checkbox" required />
+            আমি শর্তাবলী এবং গোপনীয়তা নীতিতে সম্মত
+          </label>
+        </div>
+
+        <button type="submit">সাইন আপ করুন</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | দেশি ফ্যাশনের কমিউনিটি 🇧🇩</p>
+    </div>
+  </footer>
+
+  <script src="signup.js"></script>
+</body>
+</html>

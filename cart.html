@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="আপনার শপিং কার্ট | FashionFusion">
+  <title>FashionFusion | কার্ট</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+
+  <!-- 🔰 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>🛒 আপনার কার্ট</h1>
+      <nav>
+        <a href="index.html">হোম</a>
+        <a href="gallery.html">গ্যালারি</a>
+        <a href="login.html">লগইন</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🛒 Cart Container -->
+  <main class="container">
+    <section id="cartSection" class="cart-section">
+      <h2>আপনার নির্বাচিত পণ্যসমূহ</h2>
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>পণ্য</th>
+            <th>সাইজ</th>
+            <th>পরিমাণ</th>
+            <th>দাম</th>
+            <th>মোট</th>
+            <th>মুছুন</th>
+          </tr>
+        </thead>
+        <tbody id="cartItems">
+          <!-- JS দিয়ে আইটেম আসবে -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <p>মোট পণ্য: <span id="totalItems">0</span></p>
+        <p>সাবটোটাল: ৳<span id="subtotal">0</span></p>
+        <p>ভ্যাট (৫%): ৳<span id="vat">0</span></p>
+        <h3>মোট: ৳<span id="grandTotal">0</span></h3>
+        <button onclick="checkout()">চেকআউট করুন</button>
+      </div>
+
+      <div id="emptyCartMessage" class="empty-cart">
+        <p>😔 আপনার কার্ট খালি</p>
+        <a href="gallery.html">পণ্য দেখুন</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | দেশি অনলাইন স্টোর 🇧🇩</p>
+    </div>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>

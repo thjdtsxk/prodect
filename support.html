@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>সাহায্য কেন্দ্র | FashionFusion</title>
+  <meta name="description" content="গ্রাহক সহায়তা এবং যোগাযোগ পেইজ">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="support.css" />
+  <script src="support.js" defer></script>
+</head>
+<body>
+
+  <!-- 🧭 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>📞 সাহায্য কেন্দ্র</h1>
+      <nav>
+        <a href="index.html">হোম</a>
+        <a href="gallery.html">পণ্য</a>
+        <a href="login.html">লগইন</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🤝 Support Section -->
+  <main class="container support-section">
+
+    <!-- ❓ FAQ -->
+    <section class="faq-block">
+      <h2>❓ সবচেয়ে সাধারণ প্রশ্ন</h2>
+      <details>
+        <summary>আমি কিভাবে অর্ডার ট্র্যাক করবো?</summary>
+        <p><a href="order-status.html">order-status.html</a> থেকে ট্র্যাক করা যাবে।</p>
+      </details>
+      <details>
+        <summary>পণ্য রিটার্ন করার নিয়ম কী?</summary>
+        <p>আপনি রিটার্ন-policy.html পেইজে বিস্তারিত পাবেন।</p>
+      </details>
+      <details>
+        <summary>পেমেন্টে সমস্যা হলে কী করবো?</summary>
+        <p>আমাদের ফর্মে অভিযোগ জানান, আমরা দ্রুত যোগাযোগ করবো।</p>
+      </details>
+    </section>
+
+    <!-- 📝 Contact Form -->
+    <section class="contact-form">
+      <h2>📩 আমাদেরকে লিখুন</h2>
+      <form id="supportForm">
+        <label for="name">নাম:</label>
+        <input type="text" id="name" required />
+        <label for="email">ইমেইল:</label>
+        <input type="email" id="email" required />
+        <label for="message">মেসেজ:</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">পাঠান</button>
+      </form>
+    </section>
+
+    <!-- 💬 Live Chat Demo -->
+    <section class="live-chat">
+      <h2>💬 Live Chat (Demo)</h2>
+      <p>চ্যাট শুরু করতে <button onclick="startChat()">চ্যাট করুন</button></p>
+    </section>
+
+    <!-- 📞 Request Call -->
+    <section class="callback-request">
+      <h2>📞 কলব্যাক চাই?</h2>
+      <button onclick="requestCallback()">রিকোয়েস্ট পাঠান</button>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | বিশ্বস্ত গ্রাহক সহায়তা 🇧🇩</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="লগইন করুন | FashionFusion">
+  <title>FashionFusion | লগইন</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <!-- 🔰 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>🔐 লগইন পেইজ</h1>
+      <nav>
+        <a href="index.html">হোম</a>
+        <a href="signup.html">সাইন আপ</a>
+        <a href="gallery.html">গ্যালারি</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🧾 Login Form -->
+  <main class="container">
+    <section class="login-section">
+      <h2>একাউন্টে লগইন করুন</h2>
+
+      <form id="loginForm" aria-labelledby="loginTitle">
+        <label for="email">ইমেইল বা ফোন:</label>
+        <input type="text" id="email" required aria-required="true" />
+
+        <label for="password">পাসওয়ার্ড:</label>
+        <input type="password" id="password" required aria-required="true" />
+
+        <div class="options-row">
+          <label>
+            <input type="checkbox" id="rememberMe" />
+            মনে রাখুন
+          </label>
+          <a href="forgot.html">🔑 পাসওয়ার্ড ভুলে গেছেন?</a>
+        </div>
+
+        <button type="submit">লগইন</button>
+
+        <p class="or-divider">অথবা</p>
+
+        <div class="social-login">
+          <button onclick="socialLogin('google')">🔴 Google</button>
+          <button onclick="socialLogin('facebook')">🔵 Facebook</button>
+        </div>
+
+        <label class="terms">
+          <input type="checkbox" required />
+          আমি শর্তাবলী মেনে নিচ্ছি
+        </label>
+      </form>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | দেশি ফ্যাশন প্ল্যাটফর্ম 🇧🇩</p>
+    </div>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>

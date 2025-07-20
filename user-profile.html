@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FashionFusion | ইউজার প্রোফাইল</title>
+  <meta name="description" content="FashionFusion ইউজার প্রোফাইল ও ড্যাশবোর্ড">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+
+  <!-- 🧭 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>🙋‍♂️ ইউজার প্রোফাইল</h1>
+      <nav>
+        <a href="index.html">হোম</a>
+        <a href="gallery.html">গ্যালারি</a>
+        <a href="cart.html">কার্ট</a>
+        <a href="logout.html">লগআউট</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 👤 Profile Dashboard -->
+  <main class="container">
+    <section class="profile-section">
+      <div class="profile-header">
+        <img src="images/avatar.png" alt="User Photo" class="profile-photo" />
+        <h2 id="username">👋 স্বাগতম, রাফায়েত!</h2>
+        <button onclick="editProfile()">✏️ প্রোফাইল এডিট করুন</button>
+      </div>
+
+      <!-- 📋 Profile Info -->
+      <div class="profile-info">
+        <p><strong>ইমেইল:</strong> rafi@example.com</p>
+        <p><strong>ফোন:</strong> 017XXXXXXXX</p>
+        <p><strong>ঠিকানা:</strong> ২৯/বি, খালিশপুর, খুলনা</p>
+        <p><strong>যোগদান:</strong> ফেব্রুয়ারি ২০২৪</p>
+      </div>
+
+      <!-- ❤️ Wishlist -->
+      <section class="wishlist-section">
+        <h3>🤍 Wishlist পণ্যসমূহ</h3>
+        <ul id="wishlistItems">
+          <!-- JS থেকে লোড হবে -->
+        </ul>
+      </section>
+
+      <!-- 📦 Order History -->
+      <section class="order-history">
+        <h3>🛍️ আপনার অর্ডারসমূহ</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody id="orderTable">
+            <!-- JS থেকে অর্ডার লোড হবে -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 🔒 Security -->
+      <section class="account-security">
+        <h3>🔐 অ্যাকাউন্ট নিরাপত্তা</h3>
+        <button onclick="changePassword()">পাসওয়ার্ড পরিবর্তন</button>
+        <button onclick="enable2FA()">2FA চালু করুন</button>
+      </section>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | বিশ্বস্ত ইউজার এক্সপেরিয়েন্স 🇧🇩</p>
+    </div>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Logs | FashionFusion</title>
+  <meta name="description" content="অ্যাডমিন লগ এবং অ্যাক্টিভিটি ট্র্যাকিং">
+  <link rel="stylesheet" href="admin-logs.css" />
+  <script src="admin-logs.js" defer></script>
+</head>
+<body>
+
+  <!-- 🧭 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>📋 অ্যাডমিন লগ রিপোর্ট</h1>
+      <nav>
+        <a href="admin-config.html">Settings</a>
+        <a href="admin-users.html">Users</a>
+        <a href="dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 📝 Logs Section -->
+  <main class="container">
+    <section class="log-controls">
+      <button onclick="refreshLogs()">🔄 রিফ্রেশ</button>
+    </section>
+
+    <section class="log-display" id="logList">
+      <!-- JS থেকে লগ আসবে -->
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | System Activity Logs 🇧🇩</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,258 @@
+/* ✅ Base Reset */
+body {
+  font-family: 'SolaimanLipi', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🔰 Header */
+.site-header {
+  background-color: #1976d2;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.site-header nav a {
+  margin: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* 🌅 Hero Banner */
+.hero-banner {
+  background: url('images/banner-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-banner h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-banner .btn {
+  background-color: #ff7043;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* 📂 Category Grid */
+.category-grid h3 {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.category-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.category-item img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.category-item a {
+  background-color: #1976d2;
+  color: white;
+  padding: 6px 10px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+/* 🎯 Promo Highlights */
+.promo-highlights h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.highlight-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.highlight-item {
+  background-color: #fffbe6;
+  padding: 15px;
+  border-radius: 6px;
+  width: 250px;
+  box-shadow: 0 0 5px rgba(255, 193, 7, 0.2);
+  text-align: center;
+}
+
+.highlight-item h4 {
+  color: #f57c00;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.highlight-item a {
+  background-color: #1976d2;
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* 🔥 Trending Section */
+.trending-products h3 {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.product-scroll {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.trending-item {
+  min-width: 160px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.trending-item img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+/* 💌 Newsletter */
+.newsletter {
+  margin: 50px 0;
+  background-color: #e3f2fd;
+  padding: 25px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.newsletter button {
+  padding: 10px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* 🗣️ Testimonials */
+.testimonials {
+  margin: 40px 0;
+}
+
+.testimonials h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.testimonial-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  margin-bottom: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+.testimonial-item strong {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+/* 🦶 Footer */
+.site-footer {
+  background-color: #eeeeee;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.site-footer nav a {
+  margin: 0 8px;
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 📱 Responsive Tweaks */
+@media (max-width: 768px) {
+  .highlight-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-scroll {
+    flex-direction: column;
+    overflow-x: unset;
+  }
+
+  .newsletter input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .newsletter button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,82 @@
+body {
+  font-family: 'SolaimanLipi', sans-serif;
+  background-color: #f5f8fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1976d2;
+}
+
+.log-controls {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+.log-display {
+  display: grid;
+  gap: 18px;
+}
+
+/* 🧾 Log Item */
+.log-item {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  font-size: 15px;
+}
+
+/* 🟢 Type Styles */
+.log-login {
+  border-left: 6px solid #4caf50;
+}
+
+.log-delete {
+  border-left: 6px solid #f44336;
+}
+
+.log-payment {
+  border-left: 6px solid #2196f3;
+}
+
+.log-time {
+  display: block;
+  margin-top: 6px;
+  color: #777;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .log-item {
+    padding: 12px;
+  }
+}

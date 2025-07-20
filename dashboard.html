@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard | FashionFusion</title>
+  <meta name="description" content="ফ্যাশনফিউশন অ্যাডমিন ড্যাশবোর্ড">
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="dashboard.js" defer></script>
+</head>
+<body>
+
+  <!-- 🔰 Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>🧠 অ্যাডমিন ড্যাশবোর্ড</h1>
+      <nav>
+        <a href="admin-users.html">Users</a>
+        <a href="admin-analytics.html">Analytics</a>
+        <a href="admin-config.html">Settings</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 📦 KPI Summary -->
+  <main class="container dashboard-main">
+    <section class="dashboard-kpi">
+      <div class="kpi-box">📦 Active Orders: <span id="ordersKpi">168</span></div>
+      <div class="kpi-box">👤 Total Users: <span id="usersKpi">1,250</span></div>
+      <div class="kpi-box">💳 Today’s Revenue: ৳<span id="revenueKpi">48,500</span></div>
+    </section>
+
+    <!-- ⚙️ System Status -->
+    <section class="system-health">
+      <h2>🖥️ System Status</h2>
+      <ul>
+        <li>🔗 API: ✅ Connected</li>
+        <li>🧭 CDN: ✅ Stable</li>
+        <li>📁 Database: ✅ Online</li>
+      </ul>
+    </section>
+
+    <!-- 🧩 Quick Actions -->
+    <section class="quick-actions">
+      <h2>⚡ Quick Actions</h2>
+      <button onclick="location.href='admin-users.html'">👥 Manage Users</button>
+      <button onclick="location.href='admin-logs.html'">📋 View Logs</button>
+      <button onclick="location.href='admin-analytics.html'">📊 View Reports</button>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 FashionFusion | Central Admin Dashboard 🇧🇩</p>
+    </div>
+  </footer>
+</body>
+</html>
